@@ -8,6 +8,11 @@
 ////////////////////////////////////////////////////////////////////
 // 1. Função Declarada (sem parametro)
 //Declarando a função
+function cl(a){
+    console.log(a)
+}
+
+
 function imprimirOlaMundo(){
     console.log("Olá Mundo!!") // ação da função
 }
@@ -28,3 +33,8 @@ console.log(resultado)
 
 let resultado2 = somar(3256,4839)
 console.log(resultado2)
+
+//////////////////////////////////////////////////////////////////
+// 3. Arrow Functions (Funções de seta =>) : possuem uma sintaxe mais curta
+const multiplicar = (x,y) => x * y
+cl(multiplicar(4,5))
