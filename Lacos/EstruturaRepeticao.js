@@ -39,7 +39,7 @@ while (contador >= 0 ){
     console.log(contador)
     contador--
 }
-------------------------------------------------------------------------------------------------------*/
+
 
 //=================================================
 // Percorrendo arrays com while
@@ -57,4 +57,77 @@ while(i < alunos.length){
     // "alunos[i]" acessa o elemento da array na posição "i"
     console.log(alunos[i])
     i++
+}
+
+
+// FOR (para)
+//=============================================
+for(let i = 0; i < 10; i++){
+    console.log(i)
+}
+// explicando:
+// let i = 0 -> valor inicial
+// i < 5 -> condição (enquanto for verdadeira, repete)
+// i++ -> incremento (aumenta 1 a cada volta)
+
+//===========================================
+// FOR (para) - com condicionais
+// verificando numeros pares...e se tem multiplo de 5
+
+// Loop de 0 a 100
+for (let i = 0; i <= 100; i++){
+    // par ou impar
+    if(i % 2 === 0){
+        console.log(i + " é par!")
+    }else {
+        console.log( i + " é ímpar!")
+    }
+
+    if( i !== 0 && i % 5 === 0){
+        console.log( i + " é multiplo de 5")
+    } else{
+        console.log( i + " não é multiplo de 5")
+    }
+}
+
+
+
+//===============================================================================================
+// usando o for para percorrer array
+
+let numeros5 = [14, 67, 89, 15, 23]
+for(let i = 0; i < 5; i++){
+    let elemento = numeros5[i]
+    console.log(elemento)
+}
+
+
+//==============================================
+// for...of...
+// Definição: o loop for... of percorre arrays e objetos, alocando o valor de cada posição do array em uma variavel, permitindo executar alguma ação para cada valor distinto
+
+// criamos uma array com alguns numeros
+const numeros5 = [14, 67, 89, 15, 23]
+
+// usamos for...of para percorrer cada numero da array 
+for( let numero of numeros5){
+    // aqui, dentro do loop, 'numero' é cada elemento da array, um por vez
+    console.log(numero) // mostra o número no console
+
+}
+------------------------------------------------------------------------------------------------------*/
+// exemplos:
+// exemplo 1: escolhendo aleatoriamente um lanche
+
+// começamos com uma array de lanches
+let lanches = ["Pizza", "Arepa", "Hamburger", "Hot-dog", "pastel", "Burritos", "Batata-frita", "Nuggets", "morango", "coxinha", "sushi", "salgadinho", "sorvete"]
+
+// vamos percorrer cada lanche e escolher um aleatorio 
+for(let lanche of lanches){
+    let chance = Math.random() // número aleatorio entre 0 e 1
+    if(chance > 0.5){
+        console.log(`vou comer ${lanche} hoje!🍽️`)
+    }else{
+        console.log(`Hoje não vai dar para ${lanche} 😞`)
+    }
 }
