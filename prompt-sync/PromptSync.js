@@ -1,0 +1,11 @@
+const prompt = require ("prompt-sync")()
+
+let um = prompt ("O que é bullyng? ")
+let dois = prompt ("O que é assimetria de poder? ")
+let tres = prompt ("Defina Cyberbullying: ")
+let quatro = prompt ("O que é interseccionalidade? ")
+let cinco = prompt ("Qual a relação com o bullying? ")
+let seis = prompt ("Quem foi Kimberlé Crenshaw? ")
+let sete = prompt ("O que são os preconceitos estruturais? Explique e cite 3 deles. ")
+let oito = prompt ("O bullying ocorre por acaso? ")
+let nove = prompt ("Bullying é crime? ") 
